@@ -1,0 +1,23 @@
+{
+  "name": "connect-marklogic",
+  "version": "0.0.1",
+  "description": "A session store for Connect backed by MarkLogic",
+  "main": "connect-marklogic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withjam/connect-marklogic.git"
+  },
+  "keywords": [
+    "connect",
+    "marklogic",
+    "session",
+    "express",
+    "ml8"
+  ],
+  "author": "Matt Pileggi <Matt.Pileggi@marklogic.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/withjam/connect-marklogic/issues"
+  },
+  "homepage": "http://withjam.github.io/connect-marklogic"
+}
