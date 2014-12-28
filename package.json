@@ -2,7 +2,7 @@
   "name": "connect-marklogic",
   "version": "0.0.1",
   "description": "A session store for Connect backed by MarkLogic",
-  "main": "connect-marklogic",
+  "main": "./lib/connect-marklogic",
   "repository": {
     "type": "git",
     "url": "https://github.com/withjam/connect-marklogic.git"
@@ -15,7 +15,7 @@
     "ml8"
   ],
   "author": "Matt Pileggi <Matt.Pileggi@marklogic.com>",
-  "license": "ISC",
+  "license": "Apache",
   "bugs": {
     "url": "https://github.com/withjam/connect-marklogic/issues"
   },
