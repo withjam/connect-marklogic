@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/withjam/connect-marklogic/issues"
   },
-  "homepage": "http://withjam.github.io/connect-marklogic"
+  "homepage": "http://withjam.github.io/connect-marklogic",
+  "dependencies": {
+    "debug": "^2.1.0",
+    "deprecate": "^0.1.0",
+    "marklogic": "^1.0.0-ea3",
+    "q": "^1.1.2"
+  }
 }
