@@ -1,6 +1,6 @@
 # Connect Marklogic
 
-A session store for Connect backed by [MarkLogic]().  Requires MarkLogic version >= 8 for its native JSON support and NodeJS client.
+A session store for Connect backed by [MarkLogic](https://www.npmjs.com/package/marklogic).  Requires MarkLogic version >= 8 for its native JSON support and NodeJS client.
 
 ## Installation
 
