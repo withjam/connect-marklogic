@@ -19,7 +19,7 @@ Then follow the usage instructions below.
   A MarkLogic client is required.  An existing client can be passed directly using the `client` param or created for you using the `host` and optional `port` settings (port defaults to 8000).  Note that MarkLogic also requires a `username` and `password` fields when creating a client - these are not necessary if an existing client is provided.
 
   - `client` An existing client created using `marklogic.createDatabaseClient(opts)`
-  - `host` MarkLogic server hostname
+  - `host` MarkLogic server hostname (optional, defaults 127.0.0.1)
   - `port` MarkLogic server port number (defaults to 8000)
 
 The following additional params may be included:
@@ -27,7 +27,7 @@ The following additional params may be included:
   - `collection` The name of the ML collection to use for created sessions (defaults to 'sessions')
   - `ttl` the max time to live for a cookie.  If the cookie has no expiration set it will be set to now + ttl (defaults to 1209600)
 
-Any options not included in this list will be passed to the MarkLogic `createDatabaseClient()` method directly.
+If `client` is not provided then a client will be created and all options will be passed to the MarkLogic `createDatabaseClient()` method directly.
 
 ## Usage
 
@@ -37,7 +37,7 @@ Pass the `express-session` store into `connect-marklogic` to create a `MarkLogic
     var MarkLogicStore = require('connect-marklogic')(session);
 
     app.use(session({
-        store: new MarkLogicStore(options),
+        store: new MarkLogicStore(( user: 'admin', password: 'admin' )),
         secret: 'enterprise nosql'
     }));
 
