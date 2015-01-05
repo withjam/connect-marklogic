@@ -19,11 +19,13 @@ Then follow the usage instructions below.
   A MarkLogic client is required.  An existing client can be passed directly using the `client` param or created for you using the `host` and optional `port` settings (port defaults to 8000).  Note that MarkLogic also requires a `username` and `password` fields when creating a client - these are not necessary if an existing client is provided.
 
   - `client` An existing client created using `marklogic.createDatabaseClient(opts)`
-  - `host` MarkLogic server hostname (optional, defaults 127.0.0.1)
-  - `port` MarkLogic server port number (defaults to 8000)
+  - `username` A marklogic username (only required if client is not passed)
+  - `password` The password for the marklogic username (only required if client is not passed)
 
 The following additional params may be included:
 
+  - `host` MarkLogic server hostname (defaults 127.0.0.1)
+  - `port` MarkLogic server port number (defaults to 8000)
   - `collection` The name of the ML collection to use for created sessions (defaults to 'sessions')
   - `ttl` the max time to live for a cookie.  If the cookie has no expiration set it will be set to now + ttl (defaults to 1209600)
 
