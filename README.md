@@ -39,7 +39,7 @@ Pass the `express-session` store into `connect-marklogic` to create a `MarkLogic
     var MarkLogicStore = require('connect-marklogic')(session);
 
     app.use(session({
-        store: new MarkLogicStore(( user: 'admin', password: 'admin' )),
+        store: new MarkLogicStore({ user: 'admin', password: 'admin' }),
         secret: 'enterprise nosql'
     }));
 
